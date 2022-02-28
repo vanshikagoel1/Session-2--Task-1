@@ -142,6 +142,8 @@ class HackateersApp extends StatelessWidget {
                 ], // scaffold
               ),
               // materialapp
-            ])));
+            ]
+            ))
+            );
   }
 }
