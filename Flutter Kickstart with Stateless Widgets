@@ -17,88 +17,87 @@ class HackateersApp extends StatelessWidget {
             ), // Appbar
 
             body: ListView(children: [
-              Column(children: [
-                Container(
-                    margin: EdgeInsets.only(left: 60, right: 50),
-                    padding: new EdgeInsets.all(20.0),
+              Column(
+                children: [
+                  Container(
+                      margin: EdgeInsets.only(left: 60, right: 50),
+                      padding: new EdgeInsets.all(20.0),
+                      child: new Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch)),
+                  Image.asset("mansi.jpeg", height: 150, width: 150),
+                  const SizedBox(width: 25),
+                  const Text(
+                    'Hackateer #1: Mansi Singhal. Coder by day, writer by night. I find myself, in bits and pieces, in poetries and proses',
+                    style: TextStyle(fontFamily: 'Caveat', fontSize: 20),
+                  ),
+                  new Padding(
+                    padding: new EdgeInsets.all(7.0),
                     child: new Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch)),
-                Image.asset("mansi.jpeg", height: 150, width: 150),
+                      children: <Widget>[
+                        new Padding(
+                          padding: new EdgeInsets.all(7.0),
+                          child: Icon(Icons.thumb_up),
+                        ),
+                        new Padding(
+                          padding: new EdgeInsets.all(7.0),
+                          child: new Text(
+                            'Like',
+                            style: new TextStyle(fontSize: 18.0),
+                          ),
+                        ),
+                        new Padding(
+                          padding: new EdgeInsets.all(7.0),
+                          child: new Icon(Icons.comment),
+                        ),
+                        new Padding(
+                          padding: new EdgeInsets.all(7.0),
+                          child: new Text('Comments',
+                              style: new TextStyle(fontSize: 18.0)),
+                        ),
+                      ],
+                    ),
+                  ), //row
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(left: 60, right: 50),
+                          padding: new EdgeInsets.all(20.0),
+                          child: new Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch)),
+                      Image.asset("puneeta.jpeg", height: 150, width: 150),
                       const SizedBox(width: 25),
                       const Text(
-                        'Hey, I am Mansi Singhal. I am an IT wiz and 2nd Year student in Banasthali Vidyapith!',
+                        'Hackateer #2: Puneeta Sapra. Other than scrolling through Insta posts, I love to design stuff and do some coding.',
                         style: TextStyle(fontFamily: 'Caveat', fontSize: 20),
                       ),
-                  new Padding(
-                  padding: new EdgeInsets.all(7.0),
-                  child: new Column(
-                    children: <Widget>[
                       new Padding(
                         padding: new EdgeInsets.all(7.0),
-                        child: Icon(Icons.thumb_up),
-                      ),
-                      new Padding(
-                        padding: new EdgeInsets.all(7.0),
-                        child: new Text(
-                          'Like',
-                          style: new TextStyle(fontSize: 18.0),
-                        ),
-                      ),
-                      new Padding(
-                        padding: new EdgeInsets.all(7.0),
-                        child: new Icon(Icons.comment),
-                      ),
-                      new Padding(
-                        padding: new EdgeInsets.all(7.0),
-                        child: new Text('Comments',
-                            style: new TextStyle(fontSize: 18.0)),
-                      ),
-                    ],
-                  ),
-                ), //row
-                Column(
-                  children: [
-                    Container(
-                        margin: EdgeInsets.only(left: 60, right: 50),
-                        padding: new EdgeInsets.all(20.0),
                         child: new Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch)),
-                    Image.asset("puneeta.jpeg", height: 150, width: 150),
-                          const SizedBox(width: 25),
-                          const Text(
-                            "Hey, I am Puneeta Sapra. I am an CS wiz and 2nd Year student in Banasthali Vidyapith!",
-                            style:
-                                TextStyle(fontFamily: 'Caveat', fontSize: 20),
-                          ),
-new Padding(
-                      padding: new EdgeInsets.all(7.0),
-                      child: new Column(
-                        children: <Widget>[
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: Icon(Icons.thumb_up),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Text(
-                              'Like',
-                              style: new TextStyle(fontSize: 18.0),
+                          children: <Widget>[
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: Icon(Icons.thumb_up),
                             ),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Icon(Icons.comment),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Text('Comments',
-                                style: new TextStyle(fontSize: 18.0)),
-                          ),
-                        ],
-                      ),
-                    ), //row
-                    Column(
-                      children: [
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Text(
+                                'Like',
+                                style: new TextStyle(fontSize: 18.0),
+                              ),
+                            ),
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Icon(Icons.comment),
+                            ),
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Text('Comments',
+                                  style: new TextStyle(fontSize: 18.0)),
+                            ),
+                          ],
+                        ),
+                      ), //row
+                      Column(children: [
                         Container(
                             margin: EdgeInsets.only(left: 60, right: 50),
                             padding: new EdgeInsets.all(20.0),
@@ -108,49 +107,41 @@ new Padding(
                         Image.asset("vanshika.jpeg", height: 150, width: 150),
                         const SizedBox(width: 25),
                         const Text(
-                          "Hey, I am Vanshika Goel. I am an IT wiz and 2nd Year student in Banasthali Vidyapith!",
+                          'Hackateer #3: Vanshika Goel. Small things in life, poetry and spirituality fascinates me the most.',
                           style: TextStyle(fontFamily: 'Caveat', fontSize: 20),
                         ),
-                       new Padding(
-                      padding: new EdgeInsets.all(7.0),
-                      child: new Column(
-                        children: <Widget>[
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: Icon(Icons.thumb_up),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Text(
-                              'Like',
-                              style: new TextStyle(fontSize: 18.0),
+                        new Padding(
+                          padding: new EdgeInsets.all(7.0),
+                          child: new Column(children: <Widget>[
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: Icon(Icons.thumb_up),
                             ),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Icon(Icons.comment),
-                          ),
-                          new Padding(
-                            padding: new EdgeInsets.all(7.0),
-                            child: new Text('Comments',
-                                style: new TextStyle(fontSize: 18.0)),
-                          ),
-                        ]),
-                       )],
-                          ),
-                          //row
-                  ])
-                      ],
-                    ), // list view
-                  ], // scaffold
-                ),
-                // materialapp
-              )
-            );
-            
-            ];
-            )
-            )
-            );
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Text(
+                                'Like',
+                                style: new TextStyle(fontSize: 18.0),
+                              ),
+                            ),
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Icon(Icons.comment),
+                            ),
+                            new Padding(
+                              padding: new EdgeInsets.all(7.0),
+                              child: new Text('Comments',
+                                  style: new TextStyle(fontSize: 18.0)),
+                            ),
+                          ]),
+                        ),
+                        //row
+                      ])
+                    ],
+                  ), // list view
+                ], // scaffold
+              ),
+              // materialapp
+            ])));
   }
 }
